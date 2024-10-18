@@ -64,43 +64,6 @@
         }
       }
     },
-    "/api/ai/llama3": {
-      "post": {
-        "tags": [
-          "Artificial intelligence"
-        ],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "text": {
-                    "type": "string",
-                    "default": "kapan Indonesia merdeka?"
-                  }
-                },
-                "required": ["text"]
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "ApiKeyAuth": []
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Successful operation"
-          },
-          "401": {
-            "description": "Unauthorized"
-          }
-        }
-      }
-    },
     "/api/ai/letmegpt": {
       "post": {
         "tags": [
