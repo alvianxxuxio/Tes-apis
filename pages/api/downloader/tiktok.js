@@ -21,7 +21,7 @@ export default async function handler(req, res) {
   }
 }
 
-async function tiktok(query) {
+async function tiktok(text) {
   return new Promise(async (resolve, reject) => {
     try {
       const encodedParams = new URLSearchParams();
